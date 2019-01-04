@@ -60,31 +60,31 @@ function replace_number(obj) {
 }
 
 function replace_number_dot(obj) {
-    obj.value = obj.value.replace(/[^\d]/g, "");
+    obj.value = obj.value.replace(/[^\d.]/g, "");
     obj.value = obj.value.replace(/\.{2,}/g, "."); //只保留第一個. 清除多餘的   
     obj.value = obj.value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
 
 }
 function replace_number_dot_2(obj) {
-    obj.value = obj.value.replace(/[^\d]/g, "");
+    obj.value = obj.value.replace(/[^\d.]/g, "");
     obj.value = obj.value.replace(/\.{2,}/g, "."); //只保留第一個. 清除多餘的   
     obj.value = obj.value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
     obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d).*$/, '$1$2.$3');//只能輸入兩個小數   
 }
 function replace_number_dot_3(obj) {
-    obj.value = obj.value.replace(/[^\d]/g, "");
+    obj.value = obj.value.replace(/[^\d.]/g, "");
     obj.value = obj.value.replace(/\.{2,}/g, "."); //只保留第一個. 清除多餘的   
     obj.value = obj.value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
     obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d\d).*$/, '$1$2.$3');//只能輸入兩個小數   
 }
 function replace_number_dot_4(obj) {
-    obj.value = obj.value.replace(/[^\d]/g, "");
+    obj.value = obj.value.replace(/[^\d.]/g, "");
     obj.value = obj.value.replace(/\.{2,}/g, "."); //只保留第一個. 清除多餘的   
     obj.value = obj.value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
     obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d\d\d).*$/, '$1$2.$3');//只能輸入兩個小數   
 }
 function replace_number_dot_5(obj) {
-    obj.value = obj.value.replace(/[^\d]/g, "");
+    obj.value = obj.value.replace(/[^\d.]/g, "");
     obj.value = obj.value.replace(/\.{2,}/g, "."); //只保留第一個. 清除多餘的   
     obj.value = obj.value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
     obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d\d\d\d).*$/, '$1$2.$3');//只能輸入兩個小數   
