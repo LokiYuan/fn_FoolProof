@@ -49,9 +49,9 @@ function chkFormList(id) {
 
 
 function chkAlert(alertValue) {
-    M.toast({ html: alertValue });
+    //M.toast({ html: alertValue });
 
-    //alert(alertValue);
+    alert(alertValue);
 }
 
 //onclick="return DO_chkFormList();"
