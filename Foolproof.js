@@ -48,7 +48,18 @@ function isCellPhone(phone) {
     return regex.test(phone);
 }
 
-
+function stringBytes(c) {
+    var n = c.length, s;
+    var len = 0;
+    for (var i = 0; i < n; i++) {
+        s = c.charCodeAt(i);
+        while (s > 0) {
+            len++;
+            s = s >> 8;
+        }
+    }
+    return len;
+}
 
 
 
