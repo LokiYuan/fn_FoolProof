@@ -108,3 +108,9 @@ function replace_number_dot_5(obj) {
 //    obj = obj.replace(/^[0][9][0-9]{8}$/g, "."); 
 //    console.log(obj)
 //}
+
+
+//文字轉數字指定小數位數
+function financial(x,y) {
+  return Number.parseFloat(x).toFixed(y);
+}
