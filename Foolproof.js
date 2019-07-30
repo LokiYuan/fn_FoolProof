@@ -26,7 +26,8 @@ function isNumber_dot(val) {
 }
 
 function isTime(t) {
-	var reg = /^(20|21|22|23|[0-1]\d):[0-5]\d(:[0-5]\d)?$/;
+    var reg = /^(20|21|22|23|[0-1]\d):[0-5]\d(:[0-5]\d)?$/;
+    //13:30 或 13:30:59 皆可
     return reg.test(t);
 }
 
