@@ -25,6 +25,11 @@ function isNumber_dot(val) {
     return reg.test(val);
 }
 
+function isTime(t) {
+	var reg = /^(20|21|22|23|[0-1]\d):[0-5]\d:[0-5]\d$/;
+    return reg.test(t);
+}
+
 function isCoordinate(Type, val) { //Type=TWD97X、TWD97Y、WGS84X、WGS84Y
     if (Type == "TWD97X") {
         var reg = /^\d{6}(\.\d{0,10})?$/;
